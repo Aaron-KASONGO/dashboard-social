@@ -14,7 +14,7 @@ const Search = styled("div")(({theme}) => ({
 
 export const Navbar = () => {
   return (
-    <AppBar>
+    <AppBar position="sticky">
       <Toolbar sx={{
         display: 'flex',
         justifyContent: 'space-between'

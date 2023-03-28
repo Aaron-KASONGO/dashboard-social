@@ -9,11 +9,27 @@ import { useState } from 'react';
 
 function App() {
   const [theme, setTheme] = useState('light');
-  const themeValue = createTheme({
+
+  const darkPal = {
     palette: {
-      mode: theme
+      mode: 'dark'
     }
-  })
+  }
+
+  const lightPal = {
+    palette: {
+      mode: 'light',
+      primary: {
+        main: '#2D2727'
+      },
+      background: {
+        default: '#413543'
+      }
+    }
+  }
+  const themeValue = createTheme(
+    theme === 'light'? lightPal: darkPal
+  )
 
   return (
     <ThemeProvider theme={themeValue}>

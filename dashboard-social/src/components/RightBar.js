@@ -9,6 +9,7 @@ export const RightBar = () => {
         flex: 2,
         p: 2
     }}
+    overflow={"scroll"}
     display={{
         xs: 'none',
         sm: 'block'
@@ -42,73 +43,97 @@ export const RightBar = () => {
           }
         </ImageList>
         <Typography variant="h6">Latest Convesation</Typography>
-        <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-          <ListItem alignItems="flex-start">
-            <ListItemAvatar>
-              <Avatar alt="Remy Sharp" src="https://randomuser.me/api/portraits/men/7.jpg" />
-            </ListItemAvatar>
-            <ListItemText
-              primary="Brunch this weekend?"
-              secondary={
-                <>
-                  <Typography
-                    sx={{ display: 'inline' }}
-                    component="span"
-                    variant="body2"
-                    color="text.primary"
-                  >
-                    Ali Connors
-                  </Typography>
-                  {" — I'll be in your neighborhood doing errands this…"}
-                </>
-              }
-            />
-          </ListItem>
-          <Divider variant="inset" component="li" />
-          <ListItem alignItems="flex-start">
-            <ListItemAvatar>
-              <Avatar alt="Remy Sharp" src="https://randomuser.me/api/portraits/women/99.jpg" />
-            </ListItemAvatar>
-            <ListItemText
-              primary="Brunch this weekend?"
-              secondary={
-                <>
-                  <Typography
-                    sx={{ display: 'inline' }}
-                    component="span"
-                    variant="body2"
-                    color="text.primary"
-                  >
-                    Ali Connors
-                  </Typography>
-                  {" — I'll be in your neighborhood doing errands this…"}
-                </>
-              }
-            />
-          </ListItem>
-          <Divider variant="inset" component="li" />
-          <ListItem alignItems="flex-start">
-            <ListItemAvatar>
-              <Avatar alt="Remy Sharp" src="https://randomuser.me/api/portraits/men/14.jpg" />
-            </ListItemAvatar>
-            <ListItemText
-              primary="Brunch this weekend?"
-              secondary={
-                <>
-                  <Typography
-                    sx={{ display: 'inline' }}
-                    component="span"
-                    variant="body2"
-                    color="text.primary"
-                  >
-                    Ali Connors
-                  </Typography>
-                  {" — I'll be in your neighborhood doing errands this…"}
-                </>
-              }
-            />
-          </ListItem>
-        </List>
+        <Box overflow={"scroll"} height={300}>
+          <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+            <ListItem alignItems="flex-start">
+              <ListItemAvatar>
+                <Avatar alt="Remy Sharp" src="https://randomuser.me/api/portraits/men/7.jpg" />
+              </ListItemAvatar>
+              <ListItemText
+                primary="Brunch this weekend?"
+                secondary={
+                  <>
+                    <Typography
+                      sx={{ display: 'inline' }}
+                      component="span"
+                      variant="body2"
+                      color="text.primary"
+                    >
+                      Ali Connors
+                    </Typography>
+                    {" — I'll be in your neighborhood doing errands this…"}
+                  </>
+                }
+              />
+            </ListItem>
+            <Divider variant="inset" component="li" />
+            <ListItem alignItems="flex-start">
+              <ListItemAvatar>
+                <Avatar alt="Remy Sharp" src="https://randomuser.me/api/portraits/women/99.jpg" />
+              </ListItemAvatar>
+              <ListItemText
+                primary="Brunch this weekend?"
+                secondary={
+                  <>
+                    <Typography
+                      sx={{ display: 'inline' }}
+                      component="span"
+                      variant="body2"
+                      color="text.primary"
+                    >
+                      Ali Connors
+                    </Typography>
+                    {" — I'll be in your neighborhood doing errands this…"}
+                  </>
+                }
+              />
+            </ListItem>
+            <Divider variant="inset" component="li" />
+            <ListItem alignItems="flex-start">
+              <ListItemAvatar>
+                <Avatar alt="Remy Sharp" src="https://randomuser.me/api/portraits/men/14.jpg" />
+              </ListItemAvatar>
+              <ListItemText
+                primary="Brunch this weekend?"
+                secondary={
+                  <>
+                    <Typography
+                      sx={{ display: 'inline' }}
+                      component="span"
+                      variant="body2"
+                      color="text.primary"
+                    >
+                      Ali Connors
+                    </Typography>
+                    {" — I'll be in your neighborhood doing errands this…"}
+                  </>
+                }
+              />
+            </ListItem>
+            <Divider variant="inset" component="li" />
+            <ListItem alignItems="flex-start">
+              <ListItemAvatar>
+                <Avatar alt="Remy Sharp" src="https://randomuser.me/api/portraits/men/14.jpg" />
+              </ListItemAvatar>
+              <ListItemText
+                primary="Brunch this weekend?"
+                secondary={
+                  <>
+                    <Typography
+                      sx={{ display: 'inline' }}
+                      component="span"
+                      variant="body2"
+                      color="text.primary"
+                    >
+                      Ali Connors
+                    </Typography>
+                    {" — I'll be in your neighborhood doing errands this…"}
+                  </>
+                }
+              />
+            </ListItem>
+          </List>
+        </Box>
       </Box>
     </Box>
   )

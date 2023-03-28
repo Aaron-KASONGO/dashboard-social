@@ -10,7 +10,7 @@ import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import Brightness2Icon from '@mui/icons-material/Brightness2';
 
 
-export const SideBar = () => {
+export const SideBar = ({theme, setTheme}) => {
   return (
     <Box
     sx={{
@@ -94,7 +94,7 @@ export const SideBar = () => {
               <ListItemIcon>
                 <Brightness2Icon />
               </ListItemIcon>
-              <Switch />
+              <Switch checked={theme === 'dark'} onClick={() => setTheme(theme === 'light' ? 'dark': 'light')} />
             </ListItemButton>
           </ListItem>
         </List>

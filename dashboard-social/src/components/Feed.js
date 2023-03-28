@@ -1,20 +1,22 @@
 import { Avatar, Box, Card, CardActions, CardContent, CardHeader, CardMedia, Checkbox, IconButton, Typography } from "@mui/material"
 
-import MoreVertIcon from '@mui/icons-material/MoreVert';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import ShareIcon from '@mui/icons-material/Share';
+import { CardFeed } from "./CardFeed";
+import { imgData } from "./ImgData";
 
 
 export const Feed = () => {
   return (
     <Box
     sx={{
-        flex: 3,
+        flex: 4,
         p: 2
     }}
     >
-      
+      {
+        imgData.map((e, index) => (
+          <CardFeed imgData={e} />
+        ))
+      }
     </Box>
   )
 }
